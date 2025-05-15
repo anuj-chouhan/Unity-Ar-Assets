@@ -3,20 +3,20 @@
         {
             "type": "video",
             "name": "Demo Video",
-            "url": "https://github.com/anuj-chouhan/Unity-Ar-Assets/raw/main/Hosted%20Stuffs/Video.mp4",
+            "url": "https://github.com/anuj-chouhan/Unity-Ar-Assets/raw/main/HostedStuffs/Video.mp4",
             "position": [ 0, 1, 0 ]
         },
         {
             "type": "image",
             "name": "Sample Image",
-            "url": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/main/Hosted%20Stuffs/Image.png",
+            "url": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/main/HostedStuffs/Image.png",
 
             "position": [ 1, 1, 0 ]
         },
         {
             "type": "text",
             "name": "Sample Text",
-            "url": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/main/Hosted%20Stuffs/Text%20File.txt",
+            "url": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/main/HostedStuffs/Text%20File.txt",
             "position": [ 0, 0, 0 ]
         }
     ]
