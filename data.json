@@ -1,14 +1,22 @@
 {
     "contents": [
         {
-            "type": "model",
-            "url": "",
-            "position": [ 0, 0, 0 ]
+            "type": "video",
+            "name": "Demo Video",
+            "url": "https://github.com/anuj-chouhan/Unity-Ar-Assets/raw/refs/heads/main/Video.mp4",
+            "position": [ 0, 1, 0 ]
         },
         {
-            "type": "video",
-            "url": "",
-            "position": [ 0, 1, 0 ]
+            "type": "image",
+            "name": "Sample Image",
+            "url": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/Image.png",
+            "position": [ 1, 1, 0 ]
+        },
+        {
+            "type": "text",
+            "name": "Sample Text",
+            "url": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/Text%20File.txt",
+            "position": [ 0, 0, 0 ]
         }
     ]
 }
