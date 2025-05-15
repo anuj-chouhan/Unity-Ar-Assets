@@ -1,0 +1,14 @@
+{
+    "contents": [
+        {
+            "type": "model",
+            "url": "",
+            "position": [ 0, 0, 0 ]
+        },
+        {
+            "type": "video",
+            "url": "",
+            "position": [ 0, 1, 0 ]
+        }
+    ]
+}
