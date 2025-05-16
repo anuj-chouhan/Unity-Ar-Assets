@@ -4,20 +4,21 @@
             "type": "video",
             "name": "Demo Video",
             "url": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/main/HostedStuffs/Video.mp4",
-            "position": [ 0, 1, 0 ]
         },
         {
             "type": "image",
             "name": "Sample Image",
             "url": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/main/HostedStuffs/Image.png",
-
-            "position": [ 1, 1, 0 ]
         },
         {
             "type": "text",
             "name": "Sample Text",
             "url": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/main/HostedStuffs/Text.txt",
-            "position": [ 0, 0, 0 ]
+        },
+        {
+            "type": "model",
+            "name": "Sample Character",
+            "url": "https://github.com/anuj-chouhan/Unity-Ar-Assets/raw/main/HostedStuffs/Character.glb",
         }
     ]
 }
