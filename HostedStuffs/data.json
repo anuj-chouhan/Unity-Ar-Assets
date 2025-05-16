@@ -3,22 +3,22 @@
         {
             "type": "video",
             "name": "Demo Video",
-            "url": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/main/HostedStuffs/Video.mp4",
+            "url": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/main/HostedStuffs/Video.mp4"
         },
         {
             "type": "image",
             "name": "Sample Image",
-            "url": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/main/HostedStuffs/Image.png",
+            "url": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/main/HostedStuffs/Image.png"
         },
         {
             "type": "text",
             "name": "Sample Text",
-            "url": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/main/HostedStuffs/Text.txt",
+            "url": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/main/HostedStuffs/Text.txt"
         },
         {
             "type": "model",
             "name": "Sample Character",
-            "url": "https://github.com/anuj-chouhan/Unity-Ar-Assets/raw/main/HostedStuffs/Character.glb",
+            "url": "https://github.com/anuj-chouhan/Unity-Ar-Assets/raw/main/HostedStuffs/Character.glb"
         }
     ]
 }
