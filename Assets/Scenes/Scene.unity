@@ -1004,7 +1004,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c122c614b04e9e64f84b7eaa98b0d905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  apiUrl: https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/main/data.json
   uiText: {fileID: 539425478}
   uiImage: {fileID: 1697270195}
   videoPlayer: {fileID: 84983685}

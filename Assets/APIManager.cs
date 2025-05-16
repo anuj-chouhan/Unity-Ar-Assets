@@ -1,3 +1,4 @@
+﻿using Siccity.GLTFUtility;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -30,7 +31,7 @@ public class APIManagerMedia : MonoBehaviour
     public Image uiImage;
     public VideoPlayer videoPlayer;
 
-    private void Start() //But this is not!!! while i'm passing the same URL
+    private void Start() 
     {
         StartCoroutine(FetchAndDisplayContent());
     }
@@ -67,6 +68,9 @@ public class APIManagerMedia : MonoBehaviour
                     break;
                 case "video":
                     LoadVideo(content);
+                    break;
+                case "model":
+                    yield return DownloadAndLoadModel(content);
                     break;
                 default:
                     Debug.LogWarning($"Unknown content type: {content.type}");
@@ -121,6 +125,69 @@ public class APIManagerMedia : MonoBehaviour
         videoPlayer.Play();
         Debug.Log($"Playing video ({content.name}) from URL: {content.url}");
     }
+
+    IEnumerator DownloadAndLoadModel(ContentItem content)
+    {
+        using (UnityWebRequest www = UnityWebRequest.Get(content.url))
+        {
+            www.downloadHandler = new DownloadHandlerBuffer();
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.LogError("Download error: " + www.error);
+            }
+            else
+            {
+                byte[] data = www.downloadHandler.data;
+                GameObject model = Importer.LoadFromBytes(data);
+                model.transform.position = Vector3.zero;
+
+                // ✅ Look for Animation component
+                Animation anim = model.GetComponent<Animation>();
+                if (anim == null)
+                {
+                    anim = model.AddComponent<Animation>();
+                }
+
+                // ✅ Load animation clips from children
+                AnimationClip[] clips = model.GetComponentsInChildren<AnimationClip>();
+                if (clips.Length > 0)
+                {
+                    foreach (AnimationClip clip in clips)
+                    {
+                        anim.AddClip(clip, clip.name);
+                    }
+
+                    anim.clip = clips[0]; // Set default clip
+                    anim.Play();          // Play it
+                }
+                else
+                {
+                    Debug.LogWarning("No AnimationClips found in model.");
+                }
+            }
+        }
+    }
+    //IEnumerator DownloadAndLoadModel(ContentItem content)
+    //{
+    //    using (UnityWebRequest www = UnityWebRequest.Get(content.url))
+    //    {
+    //        www.downloadHandler = new DownloadHandlerBuffer();
+    //        yield return www.SendWebRequest();
+
+    //        if (www.result != UnityWebRequest.Result.Success)
+    //        {
+    //            Debug.LogError("Failed to download model: " + www.error);
+    //        }
+    //        else
+    //        {
+    //            byte[] data = www.downloadHandler.data;
+    //            GameObject model = Importer.LoadFromBytes(data); // From GLTFUtility
+    //            model.transform.position = Vector3.zero;
+    //        }
+    //    }
+    //}
 }
 
 
