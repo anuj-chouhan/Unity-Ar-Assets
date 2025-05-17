@@ -39,9 +39,9 @@ public class APIManager : MonoBehaviour
         StartCoroutine(DownloadText(urlText, onSuccess, onError));
     }
 
-    public void GetImageFromServer(Image targetImage, Action onSuccess = null, Action<string> onError = null)
+    public void GetImageFromServer(Action<Sprite> onSuccess = null, Action<string> onError = null)
     {
-        StartCoroutine(DownloadImage(urlImage, targetImage, onSuccess, onError));
+        StartCoroutine(DownloadImage(urlImage, onSuccess, onError));
     }
 
     public void GetGLBModel(Action<GameObject> onSuccess, Action<string> onError)
@@ -52,6 +52,11 @@ public class APIManager : MonoBehaviour
     public string GetVideoURL()
     {
         return urlVideo;
+    }
+
+    public void StopAllFetching()
+    {
+        StopAllCoroutines();
     }
 
     // ------------------ Internal Download Methods ------------------
@@ -76,7 +81,7 @@ public class APIManager : MonoBehaviour
         }
     }
 
-    private IEnumerator DownloadImage(string url, Image targetImage, Action onSuccess, Action<string> onError)
+    private IEnumerator DownloadImage(string url, Action<Sprite> onSuccess, Action<string> onError)
     {
         using (UnityWebRequest request = UnityWebRequestTexture.GetTexture(url))
         {
@@ -90,9 +95,9 @@ public class APIManager : MonoBehaviour
             else
             {
                 Texture2D tex = DownloadHandlerTexture.GetContent(request);
-                targetImage.sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f));
+                Sprite FetchedSprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f));
                 Debug.Log("Image Loaded Successfully.");
-                onSuccess?.Invoke();
+                onSuccess?.Invoke(FetchedSprite);
             }
         }
     }
@@ -143,7 +148,7 @@ public class APIManager : MonoBehaviour
                 yield break;
             }
 
-            result.transform.SetParent(this.transform);
+            result.transform.forward = -Vector3.forward;
 
             var animation = result.GetComponentInChildren<Animation>();
             if (animation != null && animation.clip != null)
