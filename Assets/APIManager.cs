@@ -1,268 +1,157 @@
-﻿using Siccity.GLTFUtility;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
-using UnityEngine.Video;
+using System;
+using UnityGLTF;
 
-public class APIManagerMedia : MonoBehaviour
+//Also Keep JSON for demonstration!
+//Add github repo link in the build as well 
+
+public class APIManager : MonoBehaviour
 {
-    [System.Serializable]
-    public class ContentItem
+    public static APIManager Instance;
+
+    private static readonly string baseURL = "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/main/HostedStuffs/";
+    private readonly string urlImage = $"{baseURL}Image.png";
+    private readonly string urlModel = $"{baseURL}Character.glb";
+    private readonly string urlText = $"{baseURL}Text.txt";
+    private readonly string urlVideo = $"{baseURL}Video.mp4";
+
+    private void Awake()
     {
-        public string type;
-        public string name;
-        public string url;
-        public float[] position;
-    }
-
-    [System.Serializable]
-    public class ContentListWrapper
-    {
-        public ContentItem[] contents;
-    }
-
-    string url = "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/main/HostedStuffs/data.json";
-
-    [Header("UI References")]
-    public TextMeshProUGUI uiText;
-    public Image uiImage;
-    public VideoPlayer videoPlayer;
-
-    private void Start() 
-    {
-        StartCoroutine(FetchAndDisplayContent());
-    }
-
-    private IEnumerator FetchAndDisplayContent()
-    {
-        UnityWebRequest jsonRequest = UnityWebRequest.Get(url);
-        yield return jsonRequest.SendWebRequest();
-
-        if (jsonRequest.result != UnityWebRequest.Result.Success)
+        if (Instance == null)
         {
-            Debug.LogError("Failed to load JSON: " + jsonRequest.error);
-            yield break;
-        }
-
-        string json = jsonRequest.downloadHandler.text;
-        ContentListWrapper contentList = JsonUtility.FromJson<ContentListWrapper>(json);
-
-        if (contentList == null || contentList.contents == null)
-        {
-            Debug.LogError("Failed to parse JSON or empty contents");
-            yield break;
-        }
-
-        foreach (var content in contentList.contents)
-        {
-            switch (content.type.ToLower())
-            {
-                case "text":
-                    yield return StartCoroutine(LoadText(content));
-                    break;
-                case "image":
-                    yield return StartCoroutine(LoadImage(content));
-                    break;
-                case "video":
-                    LoadVideo(content);
-                    break;
-                case "model":
-                    yield return DownloadAndLoadModel(content);
-                    break;
-                default:
-                    Debug.LogWarning($"Unknown content type: {content.type}");
-                    break;
-            }
-        }
-    }
-
-    private IEnumerator LoadText(ContentItem content)
-    {
-        UnityWebRequest textRequest = UnityWebRequest.Get(content.url);
-        yield return textRequest.SendWebRequest();
-
-        if (textRequest.result != UnityWebRequest.Result.Success)
-        {
-            Debug.LogError($"Failed to load text '{content.name}': " + textRequest.error);
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            string loadedText = textRequest.downloadHandler.text;
-            Debug.Log($"Loaded text ({content.name}):\n{loadedText}");
-            uiText.text = loadedText;
+            Destroy(gameObject);
         }
     }
 
-    private IEnumerator LoadImage(ContentItem content)
+    // ------------------ Public API Methods ------------------
+    
+    public void GetTextFromServer(Action<string> onSuccess, Action<string> onError)
     {
-        UnityWebRequest textureRequest = UnityWebRequestTexture.GetTexture(content.url);
-        yield return textureRequest.SendWebRequest();
-
-        if (textureRequest.result != UnityWebRequest.Result.Success)
-        {
-            Debug.LogError($"Failed to load image '{content.name}': " + textureRequest.error);
-        }
-        else
-        {
-            Texture2D tex = DownloadHandlerTexture.GetContent(textureRequest);
-            uiImage.sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f));
-            Debug.Log($"Loaded image ({content.name})");
-        }
+        StartCoroutine(DownloadText(urlText, onSuccess, onError));
     }
 
-    private void LoadVideo(ContentItem content)
+    public void GetImageFromServer(Image targetImage, Action onSuccess = null, Action<string> onError = null)
     {
-        if (videoPlayer == null)
-        {
-            Debug.LogError("VideoPlayer reference not assigned.");
-            return;
-        }
-
-        videoPlayer.url = content.url;
-        videoPlayer.Play();
-        Debug.Log($"Playing video ({content.name}) from URL: {content.url}");
+        StartCoroutine(DownloadImage(urlImage, targetImage, onSuccess, onError));
     }
 
-    IEnumerator DownloadAndLoadModel(ContentItem content)
+    public void GetGLBModel(Action<GameObject> onSuccess, Action<string> onError)
     {
-        using (UnityWebRequest www = UnityWebRequest.Get(content.url))
-        {
-            www.downloadHandler = new DownloadHandlerBuffer();
-            yield return www.SendWebRequest();
+        StartCoroutine(DownloadGLBModel(urlModel, onSuccess, onError));
+    }
 
-            if (www.result != UnityWebRequest.Result.Success)
+    public string GetVideoURL()
+    {
+        return urlVideo;
+    }
+
+    // ------------------ Internal Download Methods ------------------
+
+    private IEnumerator DownloadText(string url, Action<string> onSuccess, Action<string> onError)
+    {
+        using (UnityWebRequest request = UnityWebRequest.Get(url))
+        {
+            yield return request.SendWebRequest();
+
+            if (request.result != UnityWebRequest.Result.Success)
             {
-                Debug.LogError("Download error: " + www.error);
+                Debug.LogError("Text Download Failed: " + request.error);
+                onError?.Invoke(request.error);
             }
             else
             {
-                byte[] data = www.downloadHandler.data;
-                GameObject model = Importer.LoadFromBytes(data);
-                model.transform.position = Vector3.zero;
-
-                // ✅ Look for Animation component
-                Animation anim = model.GetComponent<Animation>();
-                if (anim == null)
-                {
-                    anim = model.AddComponent<Animation>();
-                }
-
-                // ✅ Load animation clips from children
-                AnimationClip[] clips = model.GetComponentsInChildren<AnimationClip>();
-                if (clips.Length > 0)
-                {
-                    foreach (AnimationClip clip in clips)
-                    {
-                        anim.AddClip(clip, clip.name);
-                    }
-
-                    anim.clip = clips[0]; // Set default clip
-                    anim.Play();          // Play it
-                }
-                else
-                {
-                    Debug.LogWarning("No AnimationClips found in model.");
-                }
+                string text = request.downloadHandler.text;
+                Debug.Log("Text Downloaded:\n" + text);
+                onSuccess?.Invoke(text);
             }
         }
     }
-    //IEnumerator DownloadAndLoadModel(ContentItem content)
-    //{
-    //    using (UnityWebRequest www = UnityWebRequest.Get(content.url))
-    //    {
-    //        www.downloadHandler = new DownloadHandlerBuffer();
-    //        yield return www.SendWebRequest();
 
-    //        if (www.result != UnityWebRequest.Result.Success)
-    //        {
-    //            Debug.LogError("Failed to download model: " + www.error);
-    //        }
-    //        else
-    //        {
-    //            byte[] data = www.downloadHandler.data;
-    //            GameObject model = Importer.LoadFromBytes(data); // From GLTFUtility
-    //            model.transform.position = Vector3.zero;
-    //        }
-    //    }
-    //}
+    private IEnumerator DownloadImage(string url, Image targetImage, Action onSuccess, Action<string> onError)
+    {
+        using (UnityWebRequest request = UnityWebRequestTexture.GetTexture(url))
+        {
+            yield return request.SendWebRequest();
+
+            if (request.result != UnityWebRequest.Result.Success)
+            {
+                Debug.LogError("Image Download Failed: " + request.error);
+                onError?.Invoke(request.error);
+            }
+            else
+            {
+                Texture2D tex = DownloadHandlerTexture.GetContent(request);
+                targetImage.sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f));
+                Debug.Log("Image Loaded Successfully.");
+                onSuccess?.Invoke();
+            }
+        }
+    }
+
+    private IEnumerator DownloadGLBModel(string url, Action<GameObject> onSuccess, Action<string> onError)
+    {
+        using (UnityWebRequest request = UnityWebRequest.Get(url))
+        {
+            yield return request.SendWebRequest();
+
+            if (request.result != UnityWebRequest.Result.Success)
+            {
+                Debug.LogError("GLB Download Failed: " + request.error);
+                onError?.Invoke(request.error);
+                yield break;
+            }
+
+            byte[] glbData = request.downloadHandler.data;
+
+            ImportOptions importOptions = new ImportOptions
+            {
+                DataLoader = new MemoryLoader(glbData),
+                AsyncCoroutineHelper = gameObject.AddComponent<AsyncCoroutineHelper>()
+            };
+
+            var importer = new GLTFSceneImporter("model.glb", importOptions);
+            GameObject result = null;
+            bool done = false;
+
+            importer.LoadSceneAsync().ContinueWith(task =>
+            {
+                if (task.Exception == null)
+                    result = importer.LastLoadedScene;
+                else
+                    Debug.LogException(task.Exception);
+
+                done = true;
+            });
+
+            while (!done)
+                yield return null;
+
+            if (result == null)
+            {
+                string error = "Failed to load GLB model.";
+                Debug.LogError(error);
+                onError?.Invoke(error);
+                yield break;
+            }
+
+            result.transform.SetParent(this.transform);
+
+            var animation = result.GetComponentInChildren<Animation>();
+            if (animation != null && animation.clip != null)
+                animation.Play();
+            else
+                Debug.Log("No animation found in GLB.");
+
+            onSuccess?.Invoke(result);
+        }
+    }  
 }
-
-
-
-//using System.Collections;
-//using UnityEngine;
-//using UnityEngine.Networking;
-
-//public class APIManager : MonoBehaviour
-//{
-
-//    [System.Serializable]
-//    public class ContentItem
-//    {
-//        public string type;
-//        public string name;
-//        public string url;
-//        public float[] position;
-//    }
-
-//    [System.Serializable]
-//    public class ContentListWrapper
-//    {
-//        public ContentItem[] contents;
-//    }
-
-
-//    private string apiUrl = "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/main/data.json";
-
-//    void Start()
-//    {
-//        StartCoroutine(FetchAndDisplayText());
-//    }
-
-//    IEnumerator FetchAndDisplayText()
-//    {
-//        UnityWebRequest jsonRequest = UnityWebRequest.Get(apiUrl);
-//        yield return jsonRequest.SendWebRequest();
-
-//        if (jsonRequest.result != UnityWebRequest.Result.Success)
-//        {
-//            Debug.LogError("Failed to load JSON: " + jsonRequest.error);
-//            yield break;
-//        }
-
-//        string json = jsonRequest.downloadHandler.text;
-
-//        // Parse JSON using JsonUtility
-//        ContentListWrapper contentList = JsonUtility.FromJson<ContentListWrapper>(json);
-
-//        if (contentList == null || contentList.contents == null)
-//        {
-//            Debug.LogError("Failed to parse JSON or empty contents");
-//            yield break;
-//        }
-
-//        foreach (var content in contentList.contents)
-//        {
-//            if (content.type.ToLower() == "text")
-//            {
-//                UnityWebRequest textRequest = UnityWebRequest.Get(content.url);
-//                yield return textRequest.SendWebRequest();
-
-//                if (textRequest.result != UnityWebRequest.Result.Success)
-//                {
-//                    Debug.LogError("Failed to load text: " + textRequest.error);
-//                }
-//                else
-//                {
-//                    string loadedText = textRequest.downloadHandler.text;
-//                    Debug.Log($"Loaded text ({content.name}):\n{loadedText}");
-
-//                    print(loadedText);
-//                }
-//            }
-//        }
-//    }
-//}
