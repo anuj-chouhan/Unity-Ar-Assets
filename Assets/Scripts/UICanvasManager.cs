@@ -165,6 +165,7 @@ public class UICanvasManager : MonoBehaviour
                 APIManager.Instance.GetGLBModel(
                 onSuccess: FetchedModel =>
                 {
+                    FetchedModel.transform.forward = -Vector3.forward;
                     FetchedModel.transform.SetParent(threeDModelParent.transform);
                     ShowHideLoadingScreen(false);
                 },
