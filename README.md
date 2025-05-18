@@ -32,7 +32,7 @@ All content is loaded dynamically during runtime using structured raw links, sim
 ### 💻 Run the Project in Unity
 
 1. **Clone or Download** this repository.
-2. Open the project in **Unity Editor (recommended version: [your Unity version here])**.
+2. Open the project in **Unity Editor (recommended version: 6000.0.47f1 or Above)**.
 3. Play the scene to see the runtime content loading system in action.
 
 ---
