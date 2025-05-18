@@ -5,7 +5,7 @@ using System;
 using UnityGLTF;
 using System.Threading.Tasks;
 using GLTFast;
-using System.Net.Http;
+
 
 public class APIManager : MonoBehaviour
 {
@@ -21,12 +21,6 @@ public class APIManager : MonoBehaviour
     {
         if (Instance == null)
         {
-            Shader.Find("GLTF/GLTFStandard");
-            Shader.Find("GLTF/GLTFMetallicRoughness");
-            // Or manually load from Resources if needed:
-            Resources.Load<Shader>("Shaders/GLTFStandard");
-
-
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
@@ -50,12 +44,12 @@ public class APIManager : MonoBehaviour
 
     public async void GetGLBModel(Action<GameObject> onSuccess, Action<string> onError)
     {
-        //StartCoroutine(DownloadGLBModel(urlModel, onSuccess, onError));
         await DownloadGLBModelAsync(urlModel, onSuccess, onError);
     }
 
     public string GetVideoURL()
     {
+        Debug.Log("The Video Is Loaded");
         return urlVideo;
     }
 
@@ -107,64 +101,6 @@ public class APIManager : MonoBehaviour
         }
     }
 
-    private IEnumerator DownloadGLBModel(string url, Action<GameObject> onSuccess, Action<string> onError)
-    {
-        using (UnityWebRequest request = UnityWebRequest.Get(url))
-        {
-            yield return request.SendWebRequest();
-
-            if (request.result != UnityWebRequest.Result.Success)
-            {
-                Debug.LogError("GLB Download Failed: " + request.error);
-                onError?.Invoke(request.error);
-                yield break;
-            }
-
-            byte[] glbData = request.downloadHandler.data;
-
-            ImportOptions importOptions = new ImportOptions
-            {
-                DataLoader = new MemoryLoader(glbData),
-                AsyncCoroutineHelper = gameObject.AddComponent<AsyncCoroutineHelper>()
-            };
-
-            var importer = new GLTFSceneImporter("model.glb", importOptions);
-            GameObject result = null;
-            bool done = false;
-
-            importer.LoadSceneAsync().ContinueWith(task =>
-            {
-                if (task.Exception == null)
-                    result = importer.LastLoadedScene;
-                else
-                    Debug.LogException(task.Exception);
-
-                done = true;
-            });
-
-            while (!done)
-                yield return null;
-
-            if (result == null)
-            {
-                string error = "Failed to load GLB model.";
-                Debug.LogError(error);
-                onError?.Invoke(error);
-                yield break;
-            }
-
-            result.transform.forward = -Vector3.forward;
-
-            var animation = result.GetComponentInChildren<Animation>();
-            if (animation != null && animation.clip != null)
-                animation.Play();
-            else
-                Debug.Log("No animation found in GLB.");
-
-            onSuccess?.Invoke(result);
-        }
-    }
-
     public async Task DownloadGLBModelAsync(string url, Action<GameObject> onSuccess, Action<string> onError)
     {
         try
@@ -176,11 +112,7 @@ public class APIManager : MonoBehaviour
             while (!asyncOp.isDone)
                 await Task.Yield();
 
-#if UNITY_2020_1_OR_NEWER
             if (www.result != UnityWebRequest.Result.Success)
-#else
-            if (www.isNetworkError || www.isHttpError)
-#endif
             {
                 onError?.Invoke($"Download error: {www.error}");
                 return;
@@ -206,6 +138,8 @@ public class APIManager : MonoBehaviour
                 return;
             }
 
+            Debug.Log("3D Model Is Loaded");
+
             // Optional: Try to play animation if available
             var animator = modelGO.GetComponent<Animation>() ?? modelGO.GetComponentInChildren<Animation>();
             if (animator != null && animator.clip != null)
@@ -220,4 +154,5 @@ public class APIManager : MonoBehaviour
             onError?.Invoke($"Exception: {ex.Message}");
         }
     }
+
 }
