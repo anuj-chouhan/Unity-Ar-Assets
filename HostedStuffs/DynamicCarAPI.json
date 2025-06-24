@@ -1,0 +1,45 @@
+{
+    "carSrc": "C:/Users/Anuj/Desktop/Work/I-Pangram/Local-Hosting/mg_hector.glb",
+    "bodyMaterial": {
+        "MaterialName": [
+            "MG_HECTOR_EX_ROOF_CARPAINT_MAT",
+            "MG_HECTOR_EX_BODY_BLACK_PLASTIC_MAT"
+        ],
+        "ColorOptions": [
+            "#1A1A1A",
+            "#2B2B2B",
+            "#3C3C3C",
+            "#FF6EC7",
+            "#39FF14",
+            "#00FFFF",
+            "#FFD700",
+            "#FF4500",
+            "#7CFC00",
+            "#FF00FF",
+            "#40E0D0",
+            "#DA70D6" 
+        ]
+    },
+    "wheelMaterial": {
+        "MaterialName": [
+            "MG_HECTOR_EX_BODY_CHROME_MAT",
+            "GraphiteRims"
+        ],
+        "ColorOptions": [
+            "#AAAAAA",
+            "#BBBBBB",
+            "#CCCCCC",
+            "#00BFFF",
+            "#FF1493",
+            "#FFD700",
+            "#00FA9A",
+            "#8A2BE2",
+            "#FF6347",
+            "#00CED1" 
+        ]
+    },
+    "headlights": {
+        "HeadlightsOnName": "Mesh_prim44",
+        "HeadlightsOffName": "Mesh_prim13"
+    }
+}
