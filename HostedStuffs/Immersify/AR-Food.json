@@ -6,32 +6,32 @@
             {
                 "foodPrice": 120,
                 "foodName": "Curry",
-                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Immersify/main/Hosted-Files/curry.png",
-                "foodModelSrc": "https://github.com/anuj-chouhan/Immersify/raw/refs/heads/main/Hosted-Files/curry.glb"
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/curry.png",
+                "foodModelSrc": "https://github.com/anuj-chouhan/Unity-Ar-Assets/raw/refs/heads/main/HostedStuffs/Immersify/curry.glb"
             },
             {
                 "foodPrice": 90,
                 "foodName": "Noodles",
-                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Immersify/main/Hosted-Files/momo.png",
-                "foodModelSrc": "https://github.com/anuj-chouhan/Immersify/raw/refs/heads/main/Hosted-Files/noodles.glb"
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/noodles.png",
+                "foodModelSrc": "https://github.com/anuj-chouhan/Unity-Ar-Assets/raw/refs/heads/main/HostedStuffs/Immersify/noodles.glb"
             },
             {
                 "foodPrice": 130,
                 "foodName": "MoMo",
-                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Immersify/main/Hosted-Files/noodles.png",
-                "foodModelSrc": "https://github.com/anuj-chouhan/Immersify/raw/refs/heads/main/Hosted-Files/momo.glb"
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/momo.png",
+                "foodModelSrc": "https://github.com/anuj-chouhan/Unity-Ar-Assets/raw/refs/heads/main/HostedStuffs/Immersify/momo.glb"
             },
             {
                 "foodPrice": 110,
                 "foodName": "Paneer",
-                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Immersify/main/Hosted-Files/paneer.png",
-                "foodModelSrc": "https://github.com/anuj-chouhan/Immersify/raw/refs/heads/main/Hosted-Files/paneer.glb"
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/paneer.png",
+                "foodModelSrc": "https://github.com/anuj-chouhan/Unity-Ar-Assets/raw/refs/heads/main/HostedStuffs/Immersify/paneer.glb"
             },
             {
                 "foodPrice": 100,
                 "foodName": "Samosa",
-                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Immersify/main/Hosted-Files/samosa.png",
-                "foodModelSrc": "https://github.com/anuj-chouhan/Immersify/raw/refs/heads/main/Hosted-Files/samosa.glb"
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/samosa.png",
+                "foodModelSrc": "https://github.com/anuj-chouhan/Unity-Ar-Assets/raw/refs/heads/main/HostedStuffs/Immersify/samosa.glb"
             }
         ]
     }
