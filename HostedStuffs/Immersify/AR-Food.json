@@ -1,0 +1,38 @@
+[
+    {
+        "categoryName": "Fast Food",
+        "categoryIconSrc": "https://imgs.search.brave.com/_sU0wS0LrdFZitCAoYxjl1a6gfn7EdtntTDV3oSThTg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9mYXN0/LWZvb2QtY29sbGFn/ZS0yMDA4NjM1MS5q/cGc",
+        "allFoodOfCategory": [
+            {
+                "foodPrice": 120,
+                "foodName": "Curry",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Immersify/main/Hosted-Files/curry.png",
+                "foodModelSrc": "https://github.com/anuj-chouhan/Immersify/raw/refs/heads/main/Hosted-Files/curry.glb"
+            },
+            {
+                "foodPrice": 90,
+                "foodName": "Noodles",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Immersify/main/Hosted-Files/momo.png",
+                "foodModelSrc": "https://github.com/anuj-chouhan/Immersify/raw/refs/heads/main/Hosted-Files/noodles.glb"
+            },
+            {
+                "foodPrice": 130,
+                "foodName": "MoMo",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Immersify/main/Hosted-Files/noodles.png",
+                "foodModelSrc": "https://github.com/anuj-chouhan/Immersify/raw/refs/heads/main/Hosted-Files/momo.glb"
+            },
+            {
+                "foodPrice": 110,
+                "foodName": "Paneer",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Immersify/main/Hosted-Files/paneer.png",
+                "foodModelSrc": "https://github.com/anuj-chouhan/Immersify/raw/refs/heads/main/Hosted-Files/paneer.glb"
+            },
+            {
+                "foodPrice": 100,
+                "foodName": "Samosa",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Immersify/main/Hosted-Files/samosa.png",
+                "foodModelSrc": "https://github.com/anuj-chouhan/Immersify/raw/refs/heads/main/Hosted-Files/samosa.glb"
+            }
+        ]
+    }
+]
