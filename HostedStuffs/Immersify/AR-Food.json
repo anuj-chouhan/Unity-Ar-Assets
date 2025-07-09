@@ -7,31 +7,31 @@
                 "foodPrice": 120,
                 "foodName": "Curry",
                 "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/curry.png",
-                "foodModelSrc": "https://github.com/anuj-chouhan/Unity-Ar-Assets/raw/refs/heads/main/HostedStuffs/Immersify/curry.glb"
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/curry.glb"
             },
             {
                 "foodPrice": 90,
                 "foodName": "Noodles",
                 "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/noodles.png",
-                "foodModelSrc": "https://github.com/anuj-chouhan/Unity-Ar-Assets/raw/refs/heads/main/HostedStuffs/Immersify/noodles.glb"
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/noodles.glb"
             },
             {
                 "foodPrice": 130,
                 "foodName": "MoMo",
                 "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/momo.png",
-                "foodModelSrc": "https://github.com/anuj-chouhan/Unity-Ar-Assets/raw/refs/heads/main/HostedStuffs/Immersify/momo.glb"
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/momo.glb"
             },
             {
                 "foodPrice": 110,
                 "foodName": "Paneer",
                 "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/paneer.png",
-                "foodModelSrc": "https://github.com/anuj-chouhan/Unity-Ar-Assets/raw/refs/heads/main/HostedStuffs/Immersify/paneer.glb"
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/paneer.glb"
             },
             {
                 "foodPrice": 100,
                 "foodName": "Samosa",
                 "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/samosa.png",
-                "foodModelSrc": "https://github.com/anuj-chouhan/Unity-Ar-Assets/raw/refs/heads/main/HostedStuffs/Immersify/samosa.glb"
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/samosa.glb"
             }
         ]
     }
