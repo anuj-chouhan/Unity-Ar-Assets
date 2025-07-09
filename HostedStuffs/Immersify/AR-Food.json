@@ -1,38 +1,301 @@
 [
     {
-        "categoryName": "Fast Food",
-        "categoryIconSrc": "https://imgs.search.brave.com/_sU0wS0LrdFZitCAoYxjl1a6gfn7EdtntTDV3oSThTg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9mYXN0/LWZvb2QtY29sbGFn/ZS0yMDA4NjM1MS5q/cGc",
+        "categoryName": "Street Food",
+        "categoryIconSrc": "https://imgs.search.brave.com/oMXKhAYVOVbdAB38Sxat-CSvMVzDYEG7mVGoxa2JcTI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzAv/MTkyLzk5Ny9zbWFs/bC9ncmlsbGVkLXN0/cmVldC1mb29kLWlu/LXRydWNrLW9uLXN0/cmVldC1iYWNrZ3Jv/dW5kLWFpLWdlbmVy/YXRlZC1waG90by5q/cGVn",
         "allFoodOfCategory": [
             {
-                "foodPrice": 120,
-                "foodName": "Curry",
-                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/curry.png",
-                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/curry.glb"
+                "foodPrice": 40,
+                "foodName": "Samosa",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/samosa.png",
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/samosa.glb"
             },
             {
                 "foodPrice": 90,
+                "foodName": "Veg Roll",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/Veg-roll.png",
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/Veg-roll.glb"
+            },
+            {
+                "foodPrice": 70,
+                "foodName": "Sandwich",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/sanwich.png",
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/sanwich.glb"
+            },
+            {
+                "foodPrice": 80,
+                "foodName": "Veg Parcel",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/veg-parcel.png",
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/veg-parcel.glb"
+            },
+            {
+                "foodPrice": 60,
+                "foodName": "Momos",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/momo.png",
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/momo.glb"
+            }
+        ]
+    },
+    {
+        "categoryName": "Desi Dishes",
+        "categoryIconSrc": "https://imgs.search.brave.com/E64xpPFF8_Kv6qtZ_qp6ey9zMWpTBIydgdAXSVlYCdY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dGhlc3BydWNlZWF0/cy5jb20vdGhtYi9J/WHA5SFFUdE1BWmVP/NmNXNk43RHB2OVVu/X1U9LzMwMHgyMjUv/ZmlsdGVyczpub191/cHNjYWxlKCk6bWF4/X2J5dGVzKDE1MDAw/MCk6c3RyaXBfaWNj/KCkvMzA5MjkxLTAw/MS01NmE1MTA0MjNk/Zjc4Y2Y3NzI4NjJh/ZWEuanBn",
+        "allFoodOfCategory": [
+            {
+                "foodPrice": 120,
+                "foodName": "Paneer Curry",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/paneer.png",
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/paneer.glb"
+            },
+            {
+                "foodPrice": 110,
                 "foodName": "Noodles",
                 "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/noodles.png",
                 "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/noodles.glb"
             },
             {
-                "foodPrice": 130,
-                "foodName": "MoMo",
-                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/momo.png",
-                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/momo.glb"
-            },
-            {
-                "foodPrice": 110,
-                "foodName": "Paneer",
-                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/paneer.png",
-                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/paneer.glb"
+                "foodPrice": 150,
+                "foodName": "Curry Special",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/curry.png",
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/curry.glb"
             },
             {
                 "foodPrice": 100,
-                "foodName": "Samosa",
-                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/samosa.png",
-                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/samosa.glb"
+                "foodName": "Mushroom Masala",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/mushroom.png",
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/mushroom.glb"
+            },
+            {
+                "foodPrice": 95,
+                "foodName": "Veg Parcel Sandwich",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/veg-parcel-sandwich.png",
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/veg-parcel-sandwich.glb"
+            }
+        ]
+    },
+    {
+        "categoryName": "Bakery & Snacks",
+        "categoryIconSrc": "https://imgs.search.brave.com/EwAlIPA1ce-thcMqFtZXUtG3-yGVTRjriysPlVheq78/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzEyLzQ5LzgzLzQw/LzM2MF9GXzEyNDk4/MzQwODRfd3RPSU9q/a0JZTThXZkZFaUNu/T3lYODhsUGpPQ0No/aGcuanBn",
+        "allFoodOfCategory": [
+            {
+                "foodPrice": 130,
+                "foodName": "Cake Slice",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/cake.png",
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/cake.glb"
+            },
+            {
+                "foodPrice": 150,
+                "foodName": "Croissant",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/croissant.png",
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/croissant.glb"
+            },
+            {
+                "foodPrice": 60,
+                "foodName": "French Fries",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/fries.png",
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/fries.glb"
+            },
+            {
+                "foodPrice": 80,
+                "foodName": "Hot Dog",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/hot-dog.png",
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/hot-dog.glb"
+            }
+        ]
+    },
+    {
+        "categoryName": "Western Delights",
+        "categoryIconSrc": "https://imgs.search.brave.com/_sU0wS0LrdFZitCAoYxjl1a6gfn7EdtntTDV3oSThTg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9mYXN0/LWZvb2QtY29sbGFn/ZS0yMDA4NjM1MS5q/cGc",
+        "allFoodOfCategory": [
+            {
+                "foodPrice": 170,
+                "foodName": "Cheese Burger",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/burger.png",
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/burger.glb"
+            },
+            {
+                "foodPrice": 210,
+                "foodName": "Pizza Slice",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/pizza.png",
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/pizza.glb"
+            },
+            {
+                "foodPrice": 80,
+                "foodName": "Mushroom Toast",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/mushroom.png",
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/mushroom.glb"
+            },
+            {
+                "foodPrice": 110,
+                "foodName": "Crispy Sandwich",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/sanwich.png",
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/sanwich.glb"
+            },
+            {
+                "foodPrice": 100,
+                "foodName": "Parcel Combo",
+                "foodIconSrc": "https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/veg-parcel.png",
+                "foodModelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/veg-parcel.glb"
             }
         ]
     }
 ]
+
+
+
+///*
+//    
+//    */
+
+///*
+//    //Pngs
+
+//    https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/burger.png
+//    https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/Veg-roll.png
+//    https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/curry.png
+//    https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/momo.png
+//    https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/mushroom.png
+//    https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/noodles.png
+//    https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/paneer.png
+//    https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/pizza.png
+//    https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/samosa.png
+//    https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/sanwich.png
+//    https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/veg-parcel-sandwich.png
+//    https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/veg-parcel.png
+//    https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/cake.png
+//    https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/croissant.png
+//    https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/hot-dog.png
+//    https://raw.githubusercontent.com/anuj-chouhan/Unity-Ar-Assets/refs/heads/main/HostedStuffs/Immersify/fries.png
+//*/
+
+///*
+//    //Models
+
+//    https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/curry.glb
+//    https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/noodles.glb
+//    https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/momo.glb
+//    https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/paneer.glb
+//    https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/samosa.glb
+//    https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/mushroom.glb
+//    https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/pizza.glb
+//    https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/sanwich.glb
+//    https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/veg-parcel.glb
+//    https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/veg-parcel-sandwich.glb
+//    https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/Veg-roll.glb
+//    https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/burger.glb
+//    https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/cake.glb
+//    https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/croissant.glb
+//    https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/fries.glb
+//    https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/hot-dog.glb
+//*/
+
+//// leave "categoryIconSrc" empty i will add that
+
+//[
+//    {
+//        "categoryName": "Fast Category",
+//        "categoryIconSrc": "",
+//        "allFoodOfCategory": [
+//            {
+//                "foodPrice": /* random food price in int*/,
+//                "foodName": "Food Name",
+//                "foodIconSrc": "Icon Url Here",
+//                "foodModelSrc": "Model Url Here"
+//            },
+//            {
+//                "foodPrice": /* random food price in int*/,
+//                "foodName": "Food Name",
+//                "foodIconSrc": "Icon Url Here",
+//                "foodModelSrc": "Model Url Here"
+//            },
+//            {
+//                "foodPrice": /* random food price in int*/,
+//                "foodName": "Food Name",
+//                "foodIconSrc": "Icon Url Here",
+//                "foodModelSrc": "Model Url Here"
+//            },
+//            {
+//                "foodPrice": /* random food price in int*/,
+//                "foodName": "Food Name",
+//                "foodIconSrc": "Icon Url Here",
+//                "foodModelSrc": "Model Url Here"
+//            },
+//            {
+//                "foodPrice": /* random food price in int*/,
+//                "foodName": "Food Name",
+//                "foodIconSrc": "Icon Url Here",
+//                "foodModelSrc": "Model Url Here"
+//            }
+//        ]
+//    },
+//    {
+//        "categoryName": "Fast Category",
+//        "categoryIconSrc": "",
+//        "allFoodOfCategory": [
+//            {
+//                "foodPrice": /* random food price in int*/,
+//                "foodName": "Food Name",
+//                "foodIconSrc": "Icon Url Here",
+//                "foodModelSrc": "Model Url Here"
+//            },
+//            {
+//                "foodPrice": /* random food price in int*/,
+//                "foodName": "Food Name",
+//                "foodIconSrc": "Icon Url Here",
+//                "foodModelSrc": "Model Url Here"
+//            },
+//            {
+//                "foodPrice": /* random food price in int*/,
+//                "foodName": "Food Name",
+//                "foodIconSrc": "Icon Url Here",
+//                "foodModelSrc": "Model Url Here"
+//            },
+//            {
+//                "foodPrice": /* random food price in int*/,
+//                "foodName": "Food Name",
+//                "foodIconSrc": "Icon Url Here",
+//                "foodModelSrc": "Model Url Here"
+//            },
+//            {
+//                "foodPrice": /* random food price in int*/,
+//                "foodName": "Food Name",
+//                "foodIconSrc": "Icon Url Here",
+//                "foodModelSrc": "Model Url Here"
+//            }
+//        ]
+//    },
+//    {
+//        "categoryName": "Fast Category",
+//        "categoryIconSrc": "",
+//        "allFoodOfCategory": [
+//            {
+//                "foodPrice": /* random food price in int*/,
+//                "foodName": "Food Name",
+//                "foodIconSrc": "Icon Url Here",
+//                "foodModelSrc": "Model Url Here"
+//            },
+//            {
+//                "foodPrice": /* random food price in int*/,
+//                "foodName": "Food Name",
+//                "foodIconSrc": "Icon Url Here",
+//                "foodModelSrc": "Model Url Here"
+//            },
+//            {
+//                "foodPrice": /* random food price in int*/,
+//                "foodName": "Food Name",
+//                "foodIconSrc": "Icon Url Here",
+//                "foodModelSrc": "Model Url Here"
+//            },
+//            {
+//                "foodPrice": /* random food price in int*/,
+//                "foodName": "Food Name",
+//                "foodIconSrc": "Icon Url Here",
+//                "foodModelSrc": "Model Url Here"
+//            },
+//            {
+//                "foodPrice": /* random food price in int*/,
+//                "foodName": "Food Name",
+//                "foodIconSrc": "Icon Url Here",
+//                "foodModelSrc": "Model Url Here"
+//            }
+//        ]
+//    }
+//]
