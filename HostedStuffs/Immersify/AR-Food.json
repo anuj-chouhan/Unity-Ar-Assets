@@ -253,7 +253,7 @@
     },
     {
         "categoryName": "South Indian",
-        "categoryIconSrc": "https://imgs.search.brave.com/oMXKhAYVOVbdAB38Sxat-CSvMVzDYEG7mVGoxa2JcTI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzAv/MTkyLzk5Ny9zbWFs/bC9ncmlsbGVkLXN0/cmVldC1mb29kLWlu/LXRydWNrLW9uLXN0/cmVldC1iYWNrZ3Jv/dW5kLWFpLWdlbmVy/YXRlZC1waG90by5q/cGVn",
+        "categoryIconSrc": "https://imgs.search.brave.com/OlZBMvzUQ02D-gTNLB2IC8ChrpQykEudeOfSmUca5C0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zaGVm/LmNvbS9ob21lbWFk/ZS1mb29kL3dwLWNv/bnRlbnQvdXBsb2Fk/cy82MjQ2MGUxMDM4/NDg2ZjY0NzYyY2U1/MmVfNjRjODY3YTIt/cC01MDAtMzAweDI0/MC5qcGc",
         "allFoodOfCategory": [
             {
                 "foodPrice": 40,
@@ -319,7 +319,7 @@
     },
     {
         "categoryName": "Starters",
-        "categoryIconSrc": "https://imgs.search.brave.com/E64xpPFF8_Kv6qtZ_qp6ey9zMWpTBIydgdAXSVlYCdY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dGhlc3BydWNlZWF0/cy5jb20vdGhtYi9J/WHA5SFFUdE1BWmVP/NmNXNk43RHB2OVVu/X1U9LzMwMHgyMjUv/ZmlsdGVyczpub191/cHNjYWxlKCk6bWF4/X2J5dGVzKDE1MDAw/MCk6c3RyaXBfaWNj/KCkvMzA5MjkxLTAw/MS01NmE1MTA0MjNk/Zjc4Y2Y3NzI4NjJh/ZWEuanBn",
+        "categoryIconSrc": "https://imgs.search.brave.com/5-anLDM1p52D96xFq3ox7iYrTwE9Ri3gsOOgTQH_s6w/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvODUw/MTc1OTUyL3Bob3Rv/L2luZGlhbi12ZWdl/dGFyaWFuLXRoYWxp/LXdpdGgtamVlcmEt/cmljZS1kaWZmZXJl/bnQtc25hY2tzLWFu/ZC1kaXBzLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1zWnFR/UEhKU1NOX2l0RVp0/dnFTLVczZUN0dl94/dTRyeU9WTU5yY0xX/NzNNPQ",
         "allFoodOfCategory": [
             {
                 "foodPrice": 120,
@@ -384,8 +384,8 @@
         ]
     },
     {
-        "categoryName": "Bakery & Snacks",
-        "categoryIconSrc": "https://imgs.search.brave.com/EwAlIPA1ce-thcMqFtZXUtG3-yGVTRjriysPlVheq78/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzEyLzQ5LzgzLzQw/LzM2MF9GXzEyNDk4/MzQwODRfd3RPSU9q/a0JZTThXZkZFaUNu/T3lYODhsUGpPQ0No/aGcuanBn",
+        "categoryName": "Drinks",
+        "categoryIconSrc": "https://imgs.search.brave.com/5-anLDM1p52D96xFq3ox7iYrTwE9Ri3gsOOgTQH_s6w/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvODUw/MTc1OTUyL3Bob3Rv/L2luZGlhbi12ZWdl/dGFyaWFuLXRoYWxp/LXdpdGgtamVlcmEt/cmljZS1kaWZmZXJl/bnQtc25hY2tzLWFu/ZC1kaXBzLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1zWnFR/UEhKU1NOX2l0RVp0/dnFTLVczZUN0dl94/dTRyeU9WTU5yY0xX/NzNNPQ",
         "allFoodOfCategory": [
             {
                 "foodPrice": 130,
@@ -438,8 +438,8 @@
         ]
     },
     {
-        "categoryName": "Western Delights",
-        "categoryIconSrc": "https://imgs.search.brave.com/_sU0wS0LrdFZitCAoYxjl1a6gfn7EdtntTDV3oSThTg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9mYXN0/LWZvb2QtY29sbGFn/ZS0yMDA4NjM1MS5q/cGc",
+        "categoryName": "Italian",
+        "categoryIconSrc": "https://imgs.search.brave.com/h03hzsdTL_rVmWvWUkDhqIhmrWypTWTXUtF13vSrVG4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTMw/OTYxNzQwNS9waG90/by9pdGFsaWFuLWZv/b2QtcGFzdGEtcmVj/aXBlcy1hbmQtaW5n/cmVkaWVudHMtYXMt/YW5kLXRvbWF0by1h/bmQtbW96emFyZWxs/YS1mdXNpbGxpLWFu/ZC1zcGFnaGV0dGku/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PVQzU0hwa0xZNDJ5/ZjBxenJYLTI2SDBJ/TTlVbXIwLUlVc3Jp/blBDeVduQVU9",
         "allFoodOfCategory": [
             {
                 "foodPrice": 170,
@@ -504,8 +504,8 @@
         ]
     },
     {
-        "categoryName": "South Indian",
-        "categoryIconSrc": "https://imgs.search.brave.com/oMXKhAYVOVbdAB38Sxat-CSvMVzDYEG7mVGoxa2JcTI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzAv/MTkyLzk5Ny9zbWFs/bC9ncmlsbGVkLXN0/cmVldC1mb29kLWlu/LXRydWNrLW9uLXN0/cmVldC1iYWNrZ3Jv/dW5kLWFpLWdlbmVy/YXRlZC1waG90by5q/cGVn",
+        "categoryName": "Chinese",
+        "categoryIconSrc": "https://imgs.search.brave.com/Ie8MSAly5D5yl6mhIQ3tNUWJyo3OudOZK-fhF0zmoZU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9taXhlZC1jaGlu/ZXNlLWZvb2RfOTU0/MTktMTkyNy5qcGc_/c2VtdD1haXNfaHli/cmlkJnc9NzQw",
         "allFoodOfCategory": [
             {
                 "foodPrice": 40,
@@ -570,8 +570,8 @@
         ]
     },
     {
-        "categoryName": "Starters",
-        "categoryIconSrc": "https://imgs.search.brave.com/E64xpPFF8_Kv6qtZ_qp6ey9zMWpTBIydgdAXSVlYCdY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dGhlc3BydWNlZWF0/cy5jb20vdGhtYi9J/WHA5SFFUdE1BWmVP/NmNXNk43RHB2OVVu/X1U9LzMwMHgyMjUv/ZmlsdGVyczpub191/cHNjYWxlKCk6bWF4/X2J5dGVzKDE1MDAw/MCk6c3RyaXBfaWNj/KCkvMzA5MjkxLTAw/MS01NmE1MTA0MjNk/Zjc4Y2Y3NzI4NjJh/ZWEuanBn",
+        "categoryName": "Deserts",
+        "categoryIconSrc": "https://imgs.search.brave.com/PEIpRF7MGBQY45lTN0WWKfAaAMQjfaWZOyfkrkB8h5A/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9pbmRp/YW4tdHJhZGl0aW9u/YWwtZm9vZC02ODQx/NDMuanBn",
         "allFoodOfCategory": [
             {
                 "foodPrice": 120,
