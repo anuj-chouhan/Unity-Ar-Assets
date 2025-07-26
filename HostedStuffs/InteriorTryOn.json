@@ -2,35 +2,76 @@
     "models": [
         {
             "modelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/bed.glb",
-            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/bed.png"
+            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/bed.png",
+            "customizableTextureMapsSrc": [
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_13_d.png",
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_14_d.png",
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v2_14_3_1_g.png"
+            ]
         },
         {
             "modelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/chair.glb",
-            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/chair.png"
+            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/chair.png",
+            "customizableTextureMapsSrc": [
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_13_d.png",
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_14_d.png",
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v2_14_3_1_g.png"
+            ]
         },
         {
             "modelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/kitchen.glb",
-            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/kitchen.png"
+            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/kitchen.png",
+            "customizableTextureMapsSrc": [
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_13_d.png",
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_14_d.png",
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v2_14_3_1_g.png"
+            ]
         },
         {
             "modelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/side-table.glb",
-            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/side-table.png"
+            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/side-table.png",
+            "customizableTextureMapsSrc": [
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_13_d.png",
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_14_d.png",
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v2_14_3_1_g.png"
+            ]
         },
         {
             "modelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/single-sofa.glb",
-            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/single-sofa.png"
+            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/single-sofa.png",
+            "customizableTextureMapsSrc": [
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_13_d.png",
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_14_d.png",
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v2_14_3_1_g.png"
+            ]
+
         },
         {
             "modelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/sofa.glb",
-            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/sofa.png"
+            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/sofa.png",
+            "customizableTextureMapsSrc": [
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_13_d.png",
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_14_d.png",
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v2_14_3_1_g.png"
+            ]
         },
         {
             "modelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/table.glb",
-            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/table.png"
+            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/table.png",
+            "customizableTextureMapsSrc": [
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_13_d.png",
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_14_d.png",
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v2_14_3_1_g.png"
+            ]
         },
         {
             "modelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/wood-table.glb",
-            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/wood-table.png"
+            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/wood-table.png",
+            "customizableTextureMapsSrc": [
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_13_d.png",
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_14_d.png",
+                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v2_14_3_1_g.png"
+            ]
         }
     ],
     "textures": [
