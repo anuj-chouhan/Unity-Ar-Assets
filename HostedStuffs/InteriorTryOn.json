@@ -74,7 +74,7 @@
             ]
         }
     ],
-    "textures": [
+    "tileTextures": [
         "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_13_d.png",
         "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_14_d.png",
         "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_8_2_1_b.png",
