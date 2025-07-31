@@ -1,92 +1,340 @@
 {
-    "models": [
+    "modelData": [
         {
-            "modelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/bed.glb",
-            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/bed.png",
-            "customizableTextureMapsSrc": [
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_13_d.png",
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_14_d.png",
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v2_14_3_1_g.png"
+            "id": "c208fb5e-052c-43fe-88d9-6b76a3f20084",
+            "fileName": "Model_c208fb5e-052c-43fe-88d9-6b76a3f20084",
+            "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/bed.glb",
+            "thumbnailData": {
+                "id": "1043be85-2af2-4cda-ac80-ba431d06cd22",
+                "isThumbnailDownloaded": false,
+                "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/bed.png",
+                "thumbnailName": "Thumbnail_1043be85-2af2-4cda-ac80-ba431d06cd22"
+            },
+            "isDownloaded": false,
+            "sizeOnDisk": "",
+            "customizableTextures": []
+        },
+        {
+            "id": "a6fa6025-4b5f-4290-bc2b-43654d3ba53c",
+            "fileName": "Model_a6fa6025-4b5f-4290-bc2b-43654d3ba53c",
+            "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/chair.glb",
+            "thumbnailData": {
+                "id": "22f45c8c-9ed6-4048-95ef-318a63183c40",
+                "isThumbnailDownloaded": false,
+                "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/chair.png",
+                "thumbnailName": "Thumbnail_22f45c8c-9ed6-4048-95ef-318a63183c40"
+            },
+            "isDownloaded": false,
+            "sizeOnDisk": "",
+            "customizableTextures": []
+        },
+        {
+            "id": "db46911b-37e5-41fb-aa67-f34a82bad8af",
+            "fileName": "Model_db46911b-37e5-41fb-aa67-f34a82bad8af",
+            "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/side-table.glb",
+            "thumbnailData": {
+                "id": "371f82fe-bd55-48a5-b1a6-864c851028d3",
+                "isThumbnailDownloaded": false,
+                "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/side-table.png",
+                "thumbnailName": "Thumbnail_371f82fe-bd55-48a5-b1a6-864c851028d3"
+            },
+            "isDownloaded": false,
+            "sizeOnDisk": "",
+            "customizableTextures": []
+        },
+        {
+            "id": "03cb62c2-70e9-4503-a7ee-b635ef8b32d3",
+            "fileName": "Model_03cb62c2-70e9-4503-a7ee-b635ef8b32d3",
+            "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/single-sofa.glb",
+            "thumbnailData": {
+                "id": "08c59e44-6895-4ba9-b924-9021a0431a88",
+                "isThumbnailDownloaded": false,
+                "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/single-sofa.png",
+                "thumbnailName": "Thumbnail_08c59e44-6895-4ba9-b924-9021a0431a88"
+            },
+            "isDownloaded": false,
+            "sizeOnDisk": "",
+            "customizableTextures": [
+                {
+                    "id": "341bd5aa-4465-46fe-903e-56f19e102d91",
+                    "fileName": "Texture_341bd5aa-4465-46fe-903e-56f19e102d91",
+                    "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_8_3_13_d.png",
+                    "thumbnailData": {
+                        "id": "6ee799d5-4121-428b-be26-03fb6192afde",
+                        "isThumbnailDownloaded": false,
+                        "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_8_3_13_d.png",
+                        "thumbnailName": "Thumbnail_6ee799d5-4121-428b-be26-03fb6192afde"
+                    },
+                    "isDownloaded": false,
+                    "sizeOnDisk": ""
+                },
+                {
+                    "id": "3221aa5a-013f-458f-9955-36a42f7077ed",
+                    "fileName": "Texture_3221aa5a-013f-458f-9955-36a42f7077ed",
+                    "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_8_3_8_d.png",
+                    "thumbnailData": {
+                        "id": "ee14eed0-d1ff-4c8a-99c7-adf42a2b233e",
+                        "isThumbnailDownloaded": false,
+                        "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_8_3_8_d.png",
+                        "thumbnailName": "Thumbnail_ee14eed0-d1ff-4c8a-99c7-adf42a2b233e"
+                    },
+                    "isDownloaded": false,
+                    "sizeOnDisk": ""
+                },
+                {
+                    "id": "843ac982-dde7-43ed-81bd-10039216208e",
+                    "fileName": "Texture_843ac982-dde7-43ed-81bd-10039216208e",
+                    "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_14_d.png",
+                    "thumbnailData": {
+                        "id": "2f44fd2c-ba82-43f8-9802-e84e92e28632",
+                        "isThumbnailDownloaded": false,
+                        "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_14_d.png",
+                        "thumbnailName": "Thumbnail_2f44fd2c-ba82-43f8-9802-e84e92e28632"
+                    },
+                    "isDownloaded": false,
+                    "sizeOnDisk": ""
+                },
+                {
+                    "id": "512fc354-a038-46ff-9994-c70dedacb0ba",
+                    "fileName": "Texture_512fc354-a038-46ff-9994-c70dedacb0ba",
+                    "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_13_d.png",
+                    "thumbnailData": {
+                        "id": "287738b0-6e5e-44f5-90c5-7bc8c645de22",
+                        "isThumbnailDownloaded": false,
+                        "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_13_d.png",
+                        "thumbnailName": "Thumbnail_287738b0-6e5e-44f5-90c5-7bc8c645de22"
+                    },
+                    "isDownloaded": false,
+                    "sizeOnDisk": ""
+                }
             ]
         },
         {
-            "modelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/chair.glb",
-            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/chair.png",
-            "customizableTextureMapsSrc": [
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_13_d.png",
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_14_d.png",
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v2_14_3_1_g.png"
-            ]
+            "id": "5ba0e41e-8884-4a13-9f62-0e82e46be2eb",
+            "fileName": "Model_5ba0e41e-8884-4a13-9f62-0e82e46be2eb",
+            "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/sofa.glb",
+            "thumbnailData": {
+                "id": "db14dcbb-2859-4076-aeef-3f450551b402",
+                "isThumbnailDownloaded": false,
+                "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/sofa.png",
+                "thumbnailName": "Thumbnail_db14dcbb-2859-4076-aeef-3f450551b402"
+            },
+            "isDownloaded": false,
+            "sizeOnDisk": "",
+            "customizableTextures": []
         },
         {
-            "modelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/kitchen.glb",
-            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/kitchen.png",
-            "customizableTextureMapsSrc": [
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_13_d.png",
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_14_d.png",
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v2_14_3_1_g.png"
-            ]
+            "id": "f714324c-5bfe-4edf-8dd7-fd854431d4c9",
+            "fileName": "Model_f714324c-5bfe-4edf-8dd7-fd854431d4c9",
+            "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/table.glb",
+            "thumbnailData": {
+                "id": "c8efd013-9fef-467a-9e38-8e3082e43c1d",
+                "isThumbnailDownloaded": false,
+                "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/table.png",
+                "thumbnailName": "Thumbnail_c8efd013-9fef-467a-9e38-8e3082e43c1d"
+            },
+            "isDownloaded": false,
+            "sizeOnDisk": "",
+            "customizableTextures": []
         },
         {
-            "modelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/side-table.glb",
-            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/side-table.png",
-            "customizableTextureMapsSrc": [
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_13_d.png",
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_14_d.png",
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v2_14_3_1_g.png"
-            ]
+            "id": "7c9d9b4b-6ad2-4eff-a835-c4918551d723",
+            "fileName": "Model_7c9d9b4b-6ad2-4eff-a835-c4918551d723",
+            "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/wood-table.glb",
+            "thumbnailData": {
+                "id": "89d029dc-94c3-4357-b00b-380c09312282",
+                "isThumbnailDownloaded": false,
+                "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/wood-table.png",
+                "thumbnailName": "Thumbnail_89d029dc-94c3-4357-b00b-380c09312282"
+            },
+            "isDownloaded": false,
+            "sizeOnDisk": "",
+            "customizableTextures": []
         },
         {
-            "modelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/single-sofa.glb",
-            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/single-sofa.png",
-            "customizableTextureMapsSrc": [
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_13_d.png",
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_14_d.png",
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v2_14_3_1_g.png"
-            ]
-
-        },
-        {
-            "modelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/sofa.glb",
-            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/sofa.png",
-            "customizableTextureMapsSrc": [
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_13_d.png",
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_14_d.png",
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v2_14_3_1_g.png"
-            ]
-        },
-        {
-            "modelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/table.glb",
-            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/table.png",
-            "customizableTextureMapsSrc": [
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_13_d.png",
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_14_d.png",
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v2_14_3_1_g.png"
-            ]
-        },
-        {
-            "modelSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/wood-table.glb",
-            "iconSrc": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/wood-table.png",
-            "customizableTextureMapsSrc": [
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_13_d.png",
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_14_d.png",
-                "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v2_14_3_1_g.png"
-            ]
+            "id": "68d712c3-5906-4c0c-bf58-2e826f41d496",
+            "fileName": "Model_68d712c3-5906-4c0c-bf58-2e826f41d496",
+            "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/model/kitchen.glb",
+            "thumbnailData": {
+                "id": "a0a53072-3e59-4455-bbf6-0683c8541266",
+                "isThumbnailDownloaded": false,
+                "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/kitchen.png",
+                "thumbnailName": "Thumbnail_a0a53072-3e59-4455-bbf6-0683c8541266"
+            },
+            "isDownloaded": false,
+            "sizeOnDisk": "",
+            "customizableTextures": []
         }
     ],
-    "tileTextures": [
-        "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_13_d.png",
-        "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_14_d.png",
-        "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_8_2_1_b.png",
-        "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_8_3_8_d.png",
-        "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_8_3_13_d.png",
-        "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_11_2_14_d.png",
-        "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_11_2_15_d.png",
-        "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_11_3_14_d.png",
-        "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_13_7_9_g.png",
-        "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_13_9_5_d.png",
-        "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_13_11_16_d.png",
-        "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v2_9_4_12_d.png",
-        "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v2_14_3_1_g.png"
+    "textureData": [
+        {
+            "id": "14de59d8-c685-4569-b325-0407ffc3fba0",
+            "fileName": "Texture_14de59d8-c685-4569-b325-0407ffc3fba0",
+            "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_13_d.png",
+            "thumbnailData": {
+                "id": "43eaefa9-a3b3-4ed4-8c20-4dd4de3c3e39",
+                "isThumbnailDownloaded": false,
+                "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_13_d.png",
+                "thumbnailName": "Thumbnail_43eaefa9-a3b3-4ed4-8c20-4dd4de3c3e39"
+            },
+            "isDownloaded": false,
+            "sizeOnDisk": ""
+        },
+        {
+            "id": "d8dff79c-d20b-4daa-8d15-a4963a7d87bf",
+            "fileName": "Texture_d8dff79c-d20b-4daa-8d15-a4963a7d87bf",
+            "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_14_d.png",
+            "thumbnailData": {
+                "id": "6b8e048a-a2d6-4d38-a41e-3880856d092d",
+                "isThumbnailDownloaded": false,
+                "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_4_2_14_d.png",
+                "thumbnailName": "Thumbnail_6b8e048a-a2d6-4d38-a41e-3880856d092d"
+            },
+            "isDownloaded": false,
+            "sizeOnDisk": ""
+        },
+        {
+            "id": "97aa3c24-9c32-433d-bfd7-3ca6d3bd1185",
+            "fileName": "Texture_97aa3c24-9c32-433d-bfd7-3ca6d3bd1185",
+            "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_8_2_1_b.png",
+            "thumbnailData": {
+                "id": "1e3a65f5-bc0c-4924-95a8-8b1ce4271163",
+                "isThumbnailDownloaded": false,
+                "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_8_2_1_b.png",
+                "thumbnailName": "Thumbnail_1e3a65f5-bc0c-4924-95a8-8b1ce4271163"
+            },
+            "isDownloaded": false,
+            "sizeOnDisk": ""
+        },
+        {
+            "id": "617f88b1-8cfd-4b2d-9a33-7304c68da6d7",
+            "fileName": "Texture_617f88b1-8cfd-4b2d-9a33-7304c68da6d7",
+            "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_8_3_8_d.png",
+            "thumbnailData": {
+                "id": "3f101ff2-60be-43ca-b904-31ea5dfedfbc",
+                "isThumbnailDownloaded": false,
+                "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_8_3_8_d.png",
+                "thumbnailName": "Thumbnail_3f101ff2-60be-43ca-b904-31ea5dfedfbc"
+            },
+            "isDownloaded": false,
+            "sizeOnDisk": ""
+        },
+        {
+            "id": "372213ba-3fd3-47e2-9fce-19673939f2d1",
+            "fileName": "Texture_372213ba-3fd3-47e2-9fce-19673939f2d1",
+            "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_8_3_13_d.png",
+            "thumbnailData": {
+                "id": "677fb65b-3ae9-4f03-a911-3b045d21f462",
+                "isThumbnailDownloaded": false,
+                "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_8_3_13_d.png",
+                "thumbnailName": "Thumbnail_677fb65b-3ae9-4f03-a911-3b045d21f462"
+            },
+            "isDownloaded": false,
+            "sizeOnDisk": ""
+        },
+        {
+            "id": "207664b9-3f10-4112-a123-9be97a700928",
+            "fileName": "Texture_207664b9-3f10-4112-a123-9be97a700928",
+            "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_11_2_14_d.png",
+            "thumbnailData": {
+                "id": "986a577f-d8a3-4f53-a530-2634402d76b5",
+                "isThumbnailDownloaded": false,
+                "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_11_2_14_d.png",
+                "thumbnailName": "Thumbnail_986a577f-d8a3-4f53-a530-2634402d76b5"
+            },
+            "isDownloaded": false,
+            "sizeOnDisk": ""
+        },
+        {
+            "id": "fb8486fd-349e-4a23-a095-178e1816f725",
+            "fileName": "Texture_fb8486fd-349e-4a23-a095-178e1816f725",
+            "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_11_2_15_d.png",
+            "thumbnailData": {
+                "id": "fb5c165c-3aa6-4979-a91d-e13acf28f45b",
+                "isThumbnailDownloaded": false,
+                "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_11_2_15_d.png",
+                "thumbnailName": "Thumbnail_fb5c165c-3aa6-4979-a91d-e13acf28f45b"
+            },
+            "isDownloaded": false,
+            "sizeOnDisk": ""
+        },
+        {
+            "id": "57a2c238-20af-4a05-8292-6ac508d72ebe",
+            "fileName": "Texture_57a2c238-20af-4a05-8292-6ac508d72ebe",
+            "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_11_3_14_d.png",
+            "thumbnailData": {
+                "id": "ef8df81a-bd85-40fd-ae8d-cf4e4125a971",
+                "isThumbnailDownloaded": false,
+                "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_11_3_14_d.png",
+                "thumbnailName": "Thumbnail_ef8df81a-bd85-40fd-ae8d-cf4e4125a971"
+            },
+            "isDownloaded": false,
+            "sizeOnDisk": ""
+        },
+        {
+            "id": "bfc53716-9572-40fb-b537-62ca73fd1e66",
+            "fileName": "Texture_bfc53716-9572-40fb-b537-62ca73fd1e66",
+            "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_13_7_9_g.png",
+            "thumbnailData": {
+                "id": "cd8e3739-8beb-4033-980e-3cd510fa0cdb",
+                "isThumbnailDownloaded": false,
+                "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_13_7_9_g.png",
+                "thumbnailName": "Thumbnail_cd8e3739-8beb-4033-980e-3cd510fa0cdb"
+            },
+            "isDownloaded": false,
+            "sizeOnDisk": ""
+        },
+        {
+            "id": "ba2f773c-bc56-4f41-a8e9-e430e32d4c23",
+            "fileName": "Texture_ba2f773c-bc56-4f41-a8e9-e430e32d4c23",
+            "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_13_9_5_d.png",
+            "thumbnailData": {
+                "id": "9ae34b2d-02f2-4029-9c88-64754bd8556b",
+                "isThumbnailDownloaded": false,
+                "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_13_9_5_d.png",
+                "thumbnailName": "Thumbnail_9ae34b2d-02f2-4029-9c88-64754bd8556b"
+            },
+            "isDownloaded": false,
+            "sizeOnDisk": ""
+        },
+        {
+            "id": "73c8b311-7f3e-45fc-9e02-bfa2a514cdfd",
+            "fileName": "Texture_73c8b311-7f3e-45fc-9e02-bfa2a514cdfd",
+            "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_13_11_16_d.png",
+            "thumbnailData": {
+                "id": "9b26023a-172c-4803-9cdc-bcfcc89de9a3",
+                "isThumbnailDownloaded": false,
+                "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v1_13_11_16_d.png",
+                "thumbnailName": "Thumbnail_9b26023a-172c-4803-9cdc-bcfcc89de9a3"
+            },
+            "isDownloaded": false,
+            "sizeOnDisk": ""
+        },
+        {
+            "id": "c799f8c4-0671-4954-a7ef-2e2b632faa82",
+            "fileName": "Texture_c799f8c4-0671-4954-a7ef-2e2b632faa82",
+            "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v2_9_4_12_d.png",
+            "thumbnailData": {
+                "id": "8ebc7bfb-f33f-4fae-9f2c-74c705a4cdb6",
+                "isThumbnailDownloaded": false,
+                "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v2_9_4_12_d.png",
+                "thumbnailName": "Thumbnail_8ebc7bfb-f33f-4fae-9f2c-74c705a4cdb6"
+            },
+            "isDownloaded": false,
+            "sizeOnDisk": ""
+        },
+        {
+            "id": "9df18e50-7b79-48c6-828d-19a5238f2707",
+            "fileName": "Texture_9df18e50-7b79-48c6-828d-19a5238f2707",
+            "remoteUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v2_14_3_1_g.png",
+            "thumbnailData": {
+                "id": "dc9bba2d-e1eb-4c50-a803-9dc434e11618",
+                "isThumbnailDownloaded": false,
+                "thumbnailUrl": "https://sandbox-immarsify-data-bucket.s3.ap-south-1.amazonaws.com/raj9116/test/image/xmppmax_v2_14_3_1_g.png",
+                "thumbnailName": "Thumbnail_dc9bba2d-e1eb-4c50-a803-9dc434e11618"
+            },
+            "isDownloaded": false,
+            "sizeOnDisk": ""
+        }
     ]
 }
